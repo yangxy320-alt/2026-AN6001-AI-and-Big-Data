@@ -24,7 +24,7 @@ def dbs():
 def dbsPred():
     q = float(request.form.get("q"))
     r = dbsModel.predict([[q]])
-    return (render_template("dbs.html", r=r[0][0]))
+    return render_template("dbsPred.html", r=r[0][0])
 
 if __name__ == "__main__":
     app.run()
