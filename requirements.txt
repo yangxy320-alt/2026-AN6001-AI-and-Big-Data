@@ -1,0 +1,4 @@
+guicorn
+flask
+joblib
+scikit-lern
